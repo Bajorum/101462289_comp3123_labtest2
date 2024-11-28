@@ -1,14 +1,44 @@
-Weather App - COMP3123 Lab Test 2
-This is my weather application for the COMP3123 Lab Test 2. The app is a simple yet functional weather application built using ReactJS. It fetches real-time weather data from the OpenWeatherMap API and displays details like temperature, weather conditions, humidity, and wind speed for a given city. The app is dynamic and allows users to search for weather information for any city worldwide.
+# Weather App - COMP3123 Lab Test 2
 
-Features
-City Weather Search: Users can enter a city name to get real-time weather updates.
-Dynamic Weather Display: Displays details like temperature, "feels like" temperature, humidity, wind speed, and current weather condition.
-Error Handling: Provides meaningful error messages for invalid city names or empty inputs.
-API Integration: Uses the OpenWeatherMap API for fetching real-time weather data.
-Responsive UI: Designed with a clean and simple layout for better user experience.
-Technologies Used
-ReactJS: Frontend framework for building the user interface.
-OpenWeatherMap API: For fetching weather data.
-Axios: (or Fetch) to handle API requests.
-CSS: For basic styling and layout.
+This project is a weather application built using ReactJS. The app provides the current weather and a 5-day forecast for any city entered by the user. It integrates with the OpenWeatherMap API to display temperature, weather conditions, humidity, wind speed, UV index, and additional details.
+
+---
+
+## Features
+
+- **Search Functionality**: Enter a city name to fetch weather data dynamically.
+- **Current Weather Display**: Shows the current temperature, weather description, humidity, and wind speed.
+- **5-Day Forecast**: Provides a visual forecast for the next five days, including temperature and weather icons.
+- **Additional Information**: Displays UV index and a placeholder for population data.
+
+---
+
+## Screenshots
+
+### 1. Default View with Search Bar
+The app loads with a search bar where users can enter the name of a city.
+![Search Bar Screenshot](screenshots/search-bar.png)
+
+### 2. Current Weather Display
+After entering a valid city, the app displays the current weather, including:
+- Temperature
+- Weather condition
+- Date
+- Wind speed and humidity
+![Current Weather Screenshot](screenshots/current-weather.png)
+
+### 3. Five-Day Forecast
+Below the current weather, the app shows a five-day forecast with daily temperatures and weather conditions.
+![5-Day Forecast Screenshot](screenshots/5-day-forecast.png)
+
+### 4. Error Message
+If an invalid city is entered or the search bar is empty, an error message is displayed.
+![Error Message Screenshot](screenshots/error-message.png)
+
+---
+
+## How to Run the Project
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Bajorum/101462289_comp3123_labtest2.git
