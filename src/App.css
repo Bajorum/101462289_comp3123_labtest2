@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: url('./background.png') no-repeat center center fixed;
+  background-size: cover;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  backdrop-filter: blur(5px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.weather-card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+.main-weather-info h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.main-weather-info p {
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 60px;
+  font-size: 0.9rem;
+}
+
+.forecast-item img {
+  max-width: 100%;
+  margin: 5px 0;
+}
+
+
+.additional-info {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: left;
 }
